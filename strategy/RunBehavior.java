@@ -1,21 +1,26 @@
 package strategy;
 import java.util.Random;
 
+/**
+ *  A Run Behavior for Offense position
+ * @author Marietou Seck
+ */
 class RunBehavior implements OffenseBehavior{
-public String play(){
 
-    String[] block=  {"drive (up the gut)", "draw", "pitch", "reverse"};
+    /** 
+     * When OffenseBehavior is in RunBehavior 
+     * @return A string representation of what the offense player runs
+    */
+    public String play(){
 
-    
-    Random rand = new Random();
-    int ran=rand.nextInt(block.length);
-    String fillIn=(block[ran]);
+        String[] block=  {"drive (up the gut)", "draw", "pitch", "reverse"};
 
-    return("runs a " + fillIn);
+        
+        Random rand = new Random();
+        int ran=rand.nextInt(block.length);
+        String fillIn=(block[ran]);
 
+        return("runs a " + fillIn);
 
-
-
-
-}
+    }
 }

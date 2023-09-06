@@ -1,21 +1,26 @@
 package strategy;
 import java.util.Random;
 
+/**
+ *  A Recieve Behavior for Offense position
+ * @author Marietou Seck
+ */
 class ReceieveBehavior implements OffenseBehavior{
-public String play(){
 
-    String[] block=  {"slant route", "out route", "seem route", "screen pass", "hail mary"};
+     /** 
+     * When OffenseBehavior is in RecieveBehavior 
+     * @return A string representation of what the Offense player runs
+    */
+    public String play(){
 
-    
-    Random rand = new Random();
-    int ran=rand.nextInt(block.length);
-    String fillIn=(block[ran]);
+        String[] block=  {"slant route", "out route", "seem route", "screen pass", "hail mary"};
 
-    return("runs a " + fillIn);
+        
+        Random rand = new Random();
+        int ran=rand.nextInt(block.length);
+        String fillIn=(block[ran]);
 
+        return("runs a " + fillIn);
 
-
-
-
-}
+    }
 }

@@ -1,17 +1,34 @@
 package strategy;
 
-public class Receiver extends Player(){
+/**
+ *  A Reciever position held by football player
+ * @author Marietou Seck
+ */
+public class Receiver extends Player{
 
-    public Reciever(String firstName, String lastName, boolean offense)
-    {
-
+      /**
+     * Creates a string representation for Reciever's name
+     * @param firstName Reciever's first name
+     * @param lastName Reciever's last name
+     * @param offense Reciever's offense position
+     */
+    public Receiver(String firstName, String lastName, boolean offense){
+        super(firstName, lastName, offense);
     }
-    public void setOffenseBehavior()
-    {
 
+     /**
+     *  sets OffenseBehavior to new RecieveBehavior
+     */
+     
+    public void setOffenseBehavior(){
+
+        offenseBehavior = new ReceieveBehavior();
     }
-    public void setDefenseBehavior()
-    {
+    
+     /**
+     *  Set Defensebehavior to null
+     */
+    public void setDefenseBehavior(){
         
     }
 }
