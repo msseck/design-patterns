@@ -11,6 +11,6 @@ public class Car extends Vehicle{
      * The appearance is initialized using lines obtained from a file.
      */
     public Car(){
-        super(FileReader.getLines("decorator/car.txt"));
+        super(FileReader.getLines("decorator/txt/car.txt"));
     }
 }
