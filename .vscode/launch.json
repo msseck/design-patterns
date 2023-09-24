@@ -7,6 +7,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "BikeStoreDriver",
+            "request": "launch",
+            "mainClass": "factory.BikeStoreDriver",
+            "projectName": "design-patterns_17d6762c"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
