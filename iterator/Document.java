@@ -53,8 +53,7 @@ public class Document {
 
    /**
      * Redoes the last undone change by popping it from the redo stack and pushing it back onto the undo stack.
-     * @return A message indicating the change that was redone, or null if there are
-     *         no changes to redo.
+     * @return A message indicating the change that was redone, or null if there are no changes to redo.
      */
     public String redoChange(){
         if(canRedo()){
